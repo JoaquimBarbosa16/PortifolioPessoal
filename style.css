@@ -148,7 +148,7 @@
 
   .hero-title {
     opacity: 0; 
-    transform: scale(0.8); 
+    transform: scale(1.3); 
     animation: zoomIn 1s ease-out forwards; 
   }
   
@@ -256,14 +256,70 @@
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 20px rgba(0, 191, 255, 0.4);
   }
-  .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background: #00bfff;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3
+  .icones-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* espaço entre os ícones */
+    margin-top: 20px;
   }
+  
+  .icone-contato {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .icone-contato:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn {
+    background-color: #000000;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0099ff;
+    transform: scale(1.1); 
+  }
+  
+  .btn:active {
+    transform: scale(0.9); 
+  }
+  
+  .btn-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .btn-topo svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .btn-topo:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+  }
+  
